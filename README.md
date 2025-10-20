@@ -9,4 +9,6 @@
 |   |-- cadastro.html
 |
 |-- /images/
-|   |-- (coloque suas imagens aqui, ex: logo.png, banner.jpg, etc.)
+
+|   |-- (![Uploading ConectaAção Logo Design.png…]()
+)
