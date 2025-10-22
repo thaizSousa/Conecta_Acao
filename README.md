@@ -36,3 +36,23 @@ Este site foi criado como parte de uma atividade prática de Fundamentos de HTML
 
 3.  **📝 Cadastro (`file:///C:/Users/erick/Desktop/plataforma-ong/pages/cadastro.html`)**
     * Formulário interativo com validação nativa.
+    ---
+
+### 👩‍💻 Desenvolvido por
+
+** Thaiz Sousa Amorim **
+
+📘 Projeto acadêmico — Fundamentos de HTML5.
+
+---
+
+### 📜 Licença
+
+Este projeto é de uso acadêmico e não possui fins comerciais.
+
+---
+
+### 🚀 Conheça a ONG
+
+Clique **[AQUI](COLE_O_SEU_LINK_DO_GITHUB_PAGES_AQUI)** para ver o site ao vivo.
+
