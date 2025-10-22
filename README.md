@@ -54,6 +54,7 @@ Este projeto é de uso acadêmico e não possui fins comerciais.
 
 ### 🚀 Conheça a ONG
 
-Clique **[AQUI](COLE_O_SEU_LINK_DO_GITHUB_PAGES_AQUI)** para ver o site ao vivo.
+Clique **[AQUI](https://thaizsousa.github.io/Conecta_Acao/)** para ver o site ao vivo.
+
 
 
