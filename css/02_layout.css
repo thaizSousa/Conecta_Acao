@@ -1,0 +1,67 @@
+/* Requisito: Leiaute principal com CSS Grid */
+/* Usamos Grid para o leiaute GERAL da página */
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto; /* Cabeçalho, conteúdo (flexível), rodapé */
+    min-height: 100vh;
+}
+
+/* Usamos um container para centralizar o conteúdo e criar o grid de 12 colunas */
+.container {
+    width: 90%;
+    max-width: 1200px; /* Largura máxima do site */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Requisito: Sistema de grid customizado (12 colunas) */
+/* Este é um setup simples para um grid de 12 colunas (usaremos no CSS responsivo) */
+.row {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: var(--spacing-3);
+}
+
+/* Estilos do Cabeçalho e Rodapé */
+header, footer {
+    padding: var(--spacing-3) 0;
+    background-color: var(--color-neutral-light);
+    border-bottom: 1px solid #ddd;
+}
+
+footer {
+    border-bottom: none;
+    border-top: 1px solid #ddd;
+    text-align: center;
+    margin-top: var(--spacing-6);
+}
+
+/* Requisito: Navegação com Flexbox */
+/* Usamos Flexbox para componentes INTERNOS, como a navegação */
+header .container {
+    display: flex;
+    justify-content: space-between; /* Logo na esquerda, nav na direita */
+    align-items: center;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: var(--spacing-3); /* Espaçamento entre os links */
+}
+
+header nav a {
+    font-family: var(--font-family-headings);
+    font-weight: var(--font-weight-bold);
+    text-decoration: none;
+}
+
+header nav a:hover {
+    color: var(--color-secondary);
+    text-decoration: none;
+}
+
+/* Dando espaço ao conteúdo principal */
+main {
+    padding: var(--spacing-6) 0;
+}

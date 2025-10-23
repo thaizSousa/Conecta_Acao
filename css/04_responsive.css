@@ -1,0 +1,129 @@
+/* ===== Menu Hambúrguer (Mobile-First-ish) ===== */
+
+/* Esconde o checkbox */
+.nav-toggle {
+    display: none;
+}
+
+/* Estilo do ícone hambúrguer (3 linhas) */
+.nav-toggle-label {
+    display: none; /* Só aparece em telas pequenas */
+    cursor: pointer;
+    padding: 10px;
+}
+
+.nav-toggle-label span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: var(--color-neutral-darkest);
+    margin: 5px 0;
+    transition: all 0.3s;
+}
+
+/* Esconde o menu dropdown por padrão */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: var(--color-neutral-lightest);
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+    padding: var(--spacing-2);
+    min-width: 160px;
+}
+
+/* Mostra o dropdown no :hover */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu li {
+    margin-bottom: var(--spacing-1);
+}
+
+/* ===== BREAKPOINTS (Requisito: 5) ===== */
+
+/* 1. Telas Grandes (Desktop) - 1200px+ */
+/* (Nosso estilo base já é desktop-first) */
+
+/* 2. Telas Médias (Laptops / Tablets Grandes) - 992px */
+@media (max-width: 992px) {
+    .card-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 colunas */
+    }
+
+    h1 { font-size: 2.5rem; }
+    h2 { font-size: 1.75rem; }
+}
+
+/* 3. Telas Pequenas (Tablets) - 768px */
+@media (max-width: 768px) {
+    /* É aqui que o menu hambúrguer aparece! */
+    .nav-toggle-label {
+        display: block; /* Mostra o ícone */
+    }
+
+    header nav {
+        display: none; /* Esconde a navegação desktop */
+        position: absolute;
+        top: 80px; /* Abaixo do header */
+        left: 0;
+        width: 100%;
+        background-color: var(--color-neutral-lightest);
+        box-shadow: var(--box-shadow);
+    }
+
+    header nav ul {
+        flex-direction: column; /* Links em coluna */
+        padding: var(--spacing-3);
+        width: 100%;
+    }
+
+    /* O "Hack": Quando o checkbox é marcado, mostra o nav */
+    .nav-toggle:checked ~ nav {
+        display: block;
+    }
+
+    /* Animação do ícone X */
+    .nav-toggle:checked ~ .nav-toggle-label span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+    .nav-toggle:checked ~ .nav-toggle-label span:nth-child(2) {
+        opacity: 0;
+    }
+    .nav-toggle:checked ~ .nav-toggle-label span:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -5px);
+    }
+
+    /* Dropdown em mobile */
+    .dropdown-menu {
+        position: static; /* Remove o flutuante */
+        display: none; /* Continua escondido */
+        box-shadow: none;
+        padding-left: var(--spacing-2);
+    }
+    .dropdown:hover .dropdown-menu {
+        display: block; /* Ainda mostra no hover (ou tap) */
+    }
+
+    .card-grid {
+        grid-template-columns: 1fr; /* 1 coluna */
+    }
+}
+
+/* 4. Telas Extra Pequenas (Mobiles Grandes) - 576px */
+@media (max-width: 576px) {
+    h1 { font-size: 2.0rem; }
+    h2 { font-size: 1.5rem; }
+    .container {
+        width: 95%; /* Mais espaço nas bordas */
+    }
+}
+
+/* 5. Telas Mínimas (Mobiles Pequenos) - 400px */
+@media (max-width: 400px) {
+    body {
+        font-size: var(--font-size-xs); /* Diminui fonte base */
+    }
+    h1 { font-size: 1.75rem; }
+}

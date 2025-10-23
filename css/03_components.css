@@ -1,0 +1,137 @@
+/* ===== 1. Botões (com estados) ===== */
+.btn {
+    display: inline-block;
+    padding: var(--spacing-2) var(--spacing-3);
+    font-family: var(--font-family-headings);
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-sm);
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: 2px solid transparent;
+    border-radius: var(--border-radius);
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background-color: var(--color-primary);
+    color: var(--color-neutral-lightest);
+}
+
+/* Estados do botão */
+.btn-primary:hover {
+    background-color: #0056b3; /* Um tom mais escuro de azul */
+    color: var(--color-neutral-lightest);
+    text-decoration: none;
+}
+
+.btn:focus {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
+}
+
+.btn:active {
+    transform: scale(0.98);
+}
+
+.btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+
+/* ===== 2. Cards (para projetos) ===== */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas no desktop */
+    gap: var(--spacing-4);
+}
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    overflow: hidden; /* Para a imagem não vazar */
+    background-color: var(--color-neutral-lightest);
+}
+
+.card-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; /* Garante que a imagem cubra o espaço */
+}
+
+.card-content {
+    padding: var(--spacing-3);
+}
+
+.card-content h3 {
+    margin-top: 0;
+}
+
+/* ===== 3. Badges e Tags ===== */
+.badge {
+    display: inline-block;
+    padding: 4px var(--spacing-1);
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-neutral-lightest);
+    background-color: var(--color-secondary);
+    border-radius: var(--border-radius);
+    margin-right: var(--spacing-1);
+}
+
+.badge-danger {
+    background-color: var(--color-danger);
+}
+
+/* ===== 4. Formulários Estilizados ===== */
+.form-group {
+    margin-bottom: var(--spacing-3);
+}
+
+.form-group label {
+    display: block;
+    font-weight: var(--font-weight-bold);
+    margin-bottom: var(--spacing-1);
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: var(--spacing-2);
+    font-size: var(--font-size-sm);
+    border: 1px solid #ccc;
+    border-radius: var(--border-radius);
+}
+
+/* Validação Visual */
+.form-group input:invalid {
+    border-color: var(--color-danger);
+    background-color: #fff8f8;
+}
+
+.form-group input:valid {
+    border-color: var(--color-secondary);
+}
+
+/* ===== 5. Alertas (Feedback) ===== */
+.alert {
+    padding: var(--spacing-3);
+    border: 1px solid transparent;
+    border-radius: var(--border-radius);
+    margin-bottom: var(--spacing-3);
+}
+
+.alert-success {
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+    color: #155724;
+}
+
+.alert-danger {
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    color: #721c24;
+}

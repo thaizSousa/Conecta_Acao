@@ -4,21 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Participe - ConectaAção</title>
+
+<link rel="stylesheet" href="../css/00_variables.css">
+<link rel="stylesheet" href="../css/01_base.css">
+<link rel="stylesheet" href="../css/02_layout.css">
+<link rel="stylesheet" href="../css/03_components.css">
+<link rel="stylesheet" href="../css/04_responsive.css">
 </head>
 <body>
     
-    <header>
-        <a href="../index.html">
-            <img src="../images/logo.png" alt="Descrição da imagem...">
+   <header>
+    <div class="container">
+        <a href="../index.html" class="logo">
+            <img src="../images/logo.png" alt="Logo ConectaAção" width="150">
         </a>
+
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+
         <nav>
             <ul>
                 <li><a href="../index.html">Início</a></li>
+
                 <li><a href="projetos.html">Projetos</a></li>
+
+                <li class="dropdown">
+                    <a href="#">Sobre</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Nossa Equipe</a></li>
+                        <li><a href="#">Transparência</a></li>
+                    </ul>
+                </li>
+
                 <li><a href="cadastro.html">Participe</a></li>
             </ul>
         </nav>
-    </header>
+
+        <label for="nav-toggle" class="nav-toggle-label">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+    </div>
+</header>
 
     <main>
         <h1>Participe da ConectaAção</h1>

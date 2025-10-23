@@ -1,0 +1,38 @@
+/* :root é onde nossas variáveis globais vivem */
+:root {
+    /* 1. Paleta de Cores (Exemplo com 8 cores) */
+    --color-primary: #007BFF;       /* Azul principal (links, botões) */
+    --color-secondary: #28a745;     /* Verde (sucesso, botões secundários) */
+    --color-accent: #FFC107;        /* Amarelo (destaque, alertas) */
+    --color-danger: #DC3545;        /* Vermelho (erros) */
+
+    --color-neutral-darkest: #212529; /* Texto principal */
+    --color-neutral-dark: #495057;    /* Texto secundário */
+    --color-neutral-light: #F8F9FA;   /* Fundo de seções */
+    --color-neutral-lightest: #FFFFFF;/* Fundo principal */
+
+    /* 2. Tipografia Hierárquica (5 tamanhos) */
+    --font-family-headings: 'Arial', sans-serif; /* Fonte para títulos */
+    --font-family-body: 'Georgia', serif;        /* Fonte para texto */
+
+    --font-size-xl: 3.0rem;   /* 48px (h1) */
+    --font-size-lg: 2.0rem;   /* 32px (h2) */
+    --font-size-md: 1.5rem;   /* 24px (h3) */
+    --font-size-sm: 1.125rem; /* 18px (texto normal) */
+    --font-size-xs: 0.875rem; /* 14px (texto pequeno, legendas) */
+
+    --font-weight-bold: 700;
+    --font-weight-regular: 400;
+
+    /* 3. Sistema de Espaçamento Modular (Base 8px) */
+    --spacing-1: 8px;   /* 8px */
+    --spacing-2: 16px;  /* 16px */
+    --spacing-3: 24px;  /* 24px */
+    --spacing-4: 32px;  /* 32px */
+    --spacing-6: 48px;  /* 48px */
+    --spacing-8: 64px;  /* 64px */
+
+    /* Outras variáveis úteis */
+    --border-radius: 4px;
+    --box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
