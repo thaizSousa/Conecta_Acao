@@ -9,4 +9,13 @@ document.addEventListener('DOMContentLoaded', () => {
     // 3. Inicia a SPA
     initSpa();
 
+
+});
+/* === ARQUIVO PRINCIPAL === */
+import { initSpa } from './spa.js';
+import { initThemeToggle } from './theme.js'; // <-- ADICIONE ESTA LINHA
+
+document.addEventListener('DOMContentLoaded', () => {
+    initSpa();
+    initThemeToggle(); // <-- ADICIONE ESTA LINHA
 });
