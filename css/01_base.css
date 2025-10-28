@@ -42,4 +42,13 @@ img {
     max-width: 100%;
     height: auto;
     display: block;
+
+}
+/* Estilo de foco visível para acessibilidade */
+a:focus,
+button:focus,
+input:focus,
+select:focus {
+    outline: 3px solid var(--color-accent);
+    outline-offset: 2px;
 }

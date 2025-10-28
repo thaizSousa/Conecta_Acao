@@ -35,4 +35,20 @@
     /* Outras variáveis úteis */
     --border-radius: 4px;
     --box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+
+}
+/* ============================== */
+/* VARIÁVEIS DO MODO ESCURO   */
+/* ============================== */
+[data-theme="dark"] {
+    --color-primary: #409CFF;       /* Azul mais claro */
+    --color-secondary: #34D399;     /* Verde mais claro */
+    --color-accent: #FCD34D;        /* Amarelo mais claro */
+
+    --color-neutral-darkest: #F9FAFB;  /* Texto vira claro */
+    --color-neutral-dark: #D1D5DB;     /* Texto sec. vira claro */
+    --color-neutral-light: #1F2937;    /* Fundo de seções vira escuro */
+    --color-neutral-lightest: #111827; /* Fundo principal vira escuro */
+
+    --box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
 }
