@@ -91,4 +91,18 @@ function clearErrors(form) {
     for (const field of errorFields) {
         field.classList.remove('field-error');
     }
+
+}
+/* ============================== */
+/* VARIÁVEIS DO MODO ESCURO   */
+/* ============================== */
+[data-theme="dark"] {
+    --color-primary: #409CFF;
+    --color-secondary: #34D399;
+    --color-accent: #FCD34D;
+    --color-neutral-darkest: #F9FAFB;
+    --color-neutral-dark: #D1D5DB;
+    --color-neutral-light: #1F2937;
+    --color-neutral-lightest: #111827;
+    --box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
 }
